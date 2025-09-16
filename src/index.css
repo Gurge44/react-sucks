@@ -1,0 +1,29 @@
+.toggle{
+    height: 30px;
+    width: 60px;
+    background: gray;
+    border-radius: 15px;
+
+    div{
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        background: white;
+        position: relative;
+        transition: 0.2s;
+    }
+}
+
+.toggle.on{
+    background: red;
+    div{
+        left: 0px;
+    }
+}
+
+.toggle.off{
+    div{
+        left: 30px;
+    }
+
+}
